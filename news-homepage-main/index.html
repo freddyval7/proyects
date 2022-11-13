@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/pushbar.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body class="p-5">
+  <header>
+    <nav class="navbar">
+      <ul class="nav d-flex justify-content-between container-fluid">
+        <div>
+          <li class="nav-item">
+            <a href="#" class="navbar-brand"><img src="./assets/images/logo.svg" alt="logo"></a>
+          </li>
+        </div>
+        <div class="d-none d-md-flex flex-nowrap">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">New</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+          </li>
+        </div>
+        <div class="d-block d-md-none">
+          <button data-pushbar-target="menu-mobile" class="border-0 bg-transparent">
+            <img src="./assets/images/icon-menu.svg" alt="icon-menu">
+          </button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="main-card">
+      <div class="container-fluid p-0 mt-5">
+        <div class="row gx-5">
+          <div class="col-12 col-md-8">
+            <div class="container p-0">
+              <div class="row">
+                <div class="col-12 divImg">
+                  <img src="./assets/images/image-web-3-desktop.jpg">
+                </div>
+              </div>
+              <div class="row pt-3">
+                <div class="col-12 col-md-6">
+                  <h1 class="fw-bold">The Bright Future of Web 3.0?</h1>
+                </div>
+                <div class="col-12 col-md-6">
+                  <p>We dive into the next evolution of the web that claims to put the power of the platforms back into
+                    the hands of the people.
+                    But is it really fulfilling its promise?</p>
+                  <button class="btn fw-bold p-3">READ MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="divNew" class="col-12 col-md-4 d-flex flex-column px-3 py-4 my-5 my-md-0">
+            <h2 class="fw-bold mb-5">New</h2>
+            <span class="text-white fw-bold span-new mb-2">Hydrogen VS Electric Cars</span>
+            <p class="pNew">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+            <span class="text-white fw-bold span-new mb-2">The Downsides of AI Artistry</span>
+            <p class="pNew">What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+            <span class="text-white fw-bold span-new mb-2">Is VC Funding Drying Up?</span>
+            <p class="pNew">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-1 my-md-5" id="card-bottom">
+      <div class="container text-center p-0">
+        <div class="row">
+          <div class="col-12 col-md">
+            <div class="row">
+              <div class="col-4 divImg">
+                <img src="./assets/images/image-retro-pcs.jpg">
+              </div>
+              <div class="col-8">
+                <div class="row">
+                  <div class="col d-flex flex-column align-items-start">
+                    <h3>01</h3>
+                    <span class="span-purple fw-bold my-2 text-start">Reviving Retro PCs</span>
+                    <p class="text-start">What happens when old PCs are given modern upgrades?</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="col-12 col-md my-5 my-md-0">
+            <div class="row">
+              <div class="col-4 divImg">
+                <img src="./assets/images/image-top-laptops.jpg">
+              </div>
+              <div class="col-8">
+                <div class="row">
+                  <div class="col d-flex flex-column align-items-start">
+                    <h3>02</h3>
+                    <span class="span-purple fw-bold my-2 text-start">Top 10 Laptops of 2022</span>
+                    <p class="text-start">Our best picks for various needs and budgets</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="col-12 col-md">
+            <div class="row">
+              <div class="col-4 divImg">
+                <img src="./assets/images/image-gaming-growth.jpg">
+              </div>
+              <div class="col-8">
+                <div class="row">
+                  <div class="col d-flex flex-column align-items-start">
+                    <h3>03</h3>
+                    <span class="span-purple fw-bold my-2 text-start">The Growth of Gaming</span>
+                    <p class="text-start">How the pandemic has sparked fresh opportunities</p>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pushbar Menu -->
+  <div data-pushbar-id="menu-mobile" data-pushbar-direction="right" class="pushbar menu-mobile">
+    <div class="btn-cerrar">
+      <button class="border-0 bg-transparent" data-pushbar-close><img src="./assets/images/icon-menu-close.svg"></button>
+    </div>
+    <nav class="menu">
+      <a href="#">
+        Home
+      </a>
+      <a href="#">
+        New
+      </a>
+      <a href="#">
+        Popular
+      </a>
+      <a href="#">
+        Trending
+      </a>
+      <a href="#">
+        Categories
+      </a>
+    </nav>
+  </div>
+
+  <div class="attribution mt-3">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Freddy Tomada</a>.
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+    <script src="./js/pushbar.js"></script>
+    <script>
+      var pushbar = new Pushbar({
+        blur: true,
+        overlay: true
+      });
+    </script>
+</body>
+
+</html>
