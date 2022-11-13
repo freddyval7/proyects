@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    color: #1E0E62
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#me img{
+    width: 30%;
+}
+
+/*SECTION INFO*/
+#info{
+    background-color: #F1F1F1;
+}
+
+#h1Habs:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    text-shadow: 0px 1px 0px black;
+    transition: 1.5s ease;
+    transform: translate(30px,0);
+}
+
+.divMove{
+    transition: 1.5s ease;
+    transform: translate(100px,0);
+}
+
+.divScale{
+    transition: 1.5s ease;
+    transform: scale(1.2);
+}
+
+/*SECTION EXP*/
+#aGithub{
+    background-color: #25DAC5;
+}
+
+#aGithub:hover{
+    transform: scale(1.1);
+}
+
+.spanPurple{
+    color: #1E0E62;
+}
+
+.proyect:hover{
+    transition: 0.5s ease;
+    transform: scale(1.01);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+/* FOOTER */
+footer{
+    background-color: #F1F1F1;
+    height: 40vh;
+}
+
+footer h1{
+    color: #1E0E62;
+}
+
+footer h2{
+    color: #482BE7;
+}
+
+footer > div:first-child:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+footer a:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+@media screen and (min-width: 798px) {
+    #me img{
+        width: 25% !important;
+    }
+    #me>div{
+        width: 25% !important;
+    }
+    #imgExp{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 798px){
+    .divMove{
+        transition: none;
+        transform: none;
+    }
+    
+    .divScale{
+        transition: none;
+        transform: none;
+    }
+
+    footer > div:first-child:hover{
+        transition: none;
+        cursor: pointer;
+        transform: none;
+    }
+}
