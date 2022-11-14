@@ -7,7 +7,12 @@
 /*HEADER*/
 
 header{
-    color: #1E0E62
+    color: #1E0E62;
+    height: 100px;  
+}
+
+#logo{
+    width: 75px;
 }
 
 a{
