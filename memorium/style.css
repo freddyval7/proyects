@@ -42,3 +42,9 @@ img{
 table{
     background-image: url(./img/brick-background.jpg);
 }
+
+@media screen and (max-width: 768px) {
+    #tabla{
+        width: 100% !important;
+    }
+}
