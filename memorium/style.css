@@ -1,0 +1,44 @@
+table img:hover{
+    cursor: pointer;
+}
+.seleccionada{
+    border: 3px solid salmon;
+}
+
+table{
+    opacity: 0;
+}
+
+.tablaMostrada{
+    opacity: 1;
+}
+
+.cartaVolteada{
+    background-image: url(./img/mario-hat.png);
+}
+
+table img, #imagenGrande, #btnReiniciar, #acerto, #fallo, #gano{
+    display:none;
+}
+
+#acerto, #fallo, #gano, #mejor{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+img{
+    background-color: white;
+}
+#main{
+    background-image: url(./img/super-mario-bros-cover.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#titulo{
+    height: 250px;
+}
+table{
+    background-image: url(./img/brick-background.jpg);
+}
