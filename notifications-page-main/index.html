@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="nav__notifications">
+        <h1 class="notifications__h1">Notifications</h1>
+        <div class="notifications__div">3</div>
+      </div>
+      <div class="nav__div">
+        <button id="btnRead" class="div__button">
+          <div class="button__span">Mark all as read</div>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="notification notification--unread">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-mark-webber.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Mark Webber</span>
+            <span class="card__span--light-gray">reacted to your recent post</span>
+            <span class="card__span card__span--gray">My first tournament today!</span>
+            <ion-icon class="card__point" name="ellipse"></ion-icon><br>
+            <span class="card__time">1m ago</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notification notification--unread">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-angela-gray.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Angela Gray</span>
+            <span class="card__span--light-gray">followed you</span>  
+            <ion-icon class="card__point" name="ellipse"></ion-icon><br>
+            <span class="card__time">5m ago</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notification notification--unread">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-jacob-thompson.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Jacob Thompson</span>
+            <span class="card__span--light-gray">has joined your group</span>
+            <span class="card__span card__span--gray">Chess Club</span>
+            <ion-icon class="card__point" name="ellipse"></ion-icon><br>
+            <span class="card__time">1 day ago</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Rizky Hasanuddin</span>
+            <span class="card__span--light-gray">sent you a private message</span><br>
+            <span class="card__time">5 days ago</span>
+            <div class="text__div">
+              <div class="div__p">
+                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-kimberly-smith.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card div__card--row">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Kimberly Smith</span>
+            <span class="card__span--light-gray">commented on your picture</span>
+            <br>
+            <span class="card__time">1 week ago</span>
+          </p>
+          <div class="card__img">
+            <img src="./assets/images/image-chess.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-nathan-peterson.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Nathan Peterson</span>
+            <span class="card__span--light-gray">reacted to your recent post</span>
+            <span class="card__span card__span--gray">5 end-game strategies to increase your win rate</span><br>
+            <span class="card__time">2 weeks ago</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="notification">
+      <div class="notification__img">
+        <img src="./assets/images/avatar-anna-kim.webp">
+      </div>
+      <div class="notification__div">
+        <div class="div__card">
+          <p class="card__text">
+            <span class="card__span card__span--bold">Anna Kim Skywalker</span>
+            <span class="card__span--light-gray">left the group</span>
+            <span class="card__span card__span--gray">Chess Club</span><br>
+            <span class="card__time">2 weeks ago</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/freddyval7">Freddy Tomada</a>.
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="./js/functions.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

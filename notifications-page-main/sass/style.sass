@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap')
+@import './media-queries.scss'
+
+$font-stack: 'Plus Jakarta Sans', sans-serif
+
+// Primary 
+$red: hsl(1, 90%, 64%)
+$blue: hsl(219, 85%, 26%)
+
+//Neutral
+$very-light-grayish-blue: hsl(210, 60%, 98%)
+$light-grayish-blue-1: hsl(211, 68%, 94%)
+$light-grayish-blue-2: hsl(205, 33%, 90%)
+$grayish-blue: hsl(219, 14%, 63%)
+$dark-grayish-blue: hsl(219, 12%, 42%)
+$very-dark-blue: hsl(224, 21%, 14%)
+    
+body
+    margin: 0
+    font-size: 16px
+    font-family: $font-stack
+    padding: 0 15em
+    @include mobile
+        padding: 0
+
+// HEADER
+
+.nav
+    padding: 0 5em
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @include mobile
+        padding: 0 0.5em
+
+.nav__notifications
+    display: flex
+    align-items: center  
+
+.notifications__h1
+    font-weight: bold
+    margin-right: 0.5em
+    @include mobile
+        font-size: 20px
+
+.notifications__div
+    padding: 5px 10px
+    background-color: $blue
+    color: white
+    font-weight: bold
+    border-radius: 5px
+
+.div__button
+    background-color: white
+    padding: 0.5em
+    border: none
+    &:hover
+        cursor: pointer
+
+
+.button__span
+    font-family: $font-stack
+    color: $dark-grayish-blue
+    font-size: 16px
+
+//
+
+// MAIN
+
+main
+    display: flex
+    flex-direction: column
+    align-items: center    
+
+.notification
+    margin: 1em
+    display: flex
+    width: 85%
+    &:hover
+        cursor: pointer
+
+.notification--unread
+    background-color: $very-light-grayish-blue
+    border-radius: 10px
+    padding: 0.5em
+    width: 85%
+    @include mobile
+        width: 85%
+
+.notification__img
+    & img
+        width: 50px
+
+.notification__div
+    display: flex
+    margin-left: 1em
+    width: 50%
+    @include mobile
+        width: 100%
+
+.div__card
+    display: flex
+    flex-flow: row wrap
+
+.card__text
+    margin: 0
+
+.card__span
+    &:hover
+        cursor: pointer
+        color: $blue
+
+.card__span--bold
+    font-weight: bold
+
+.card__span--gray
+    color: $dark-grayish-blue
+    font-weight: bold
+
+.card__span--light-gray
+    color: $dark-grayish-blue
+    margin: 0 3px
+    &:nth-child(5)
+        margin: 0 1px
+
+.card__point
+    color: $red
+
+.card__time
+    color: $grayish-blue
+    width: 100%
+
+.div__p
+    margin-top: 0.8em
+    color: $dark-grayish-blue
+    border: 1px solid $light-grayish-blue-2
+    border-radius: 5px
+    padding: 1em
+    &:hover
+        background-color: $light-grayish-blue-1
+
+.card__img
+    & img
+        width: 45px
+
+.div__card--row
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    width: 100%

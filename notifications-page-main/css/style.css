@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  padding: 0 15em;
+}
+@media screen and (max-width: 576px) {
+  body {
+    padding: 0;
+  }
+}
+
+.nav {
+  padding: 0 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .nav {
+    padding: 0 0.5em;
+  }
+}
+
+.nav__notifications {
+  display: flex;
+  align-items: center;
+}
+
+.notifications__h1 {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+@media screen and (max-width: 576px) {
+  .notifications__h1 {
+    font-size: 20px;
+  }
+}
+
+.notifications__div {
+  padding: 5px 10px;
+  background-color: hsl(219deg, 85%, 26%);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.div__button {
+  background-color: white;
+  padding: 0.5em;
+  border: none;
+}
+.div__button:hover {
+  cursor: pointer;
+}
+
+.button__span {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification {
+  margin: 1em;
+  display: flex;
+  width: 85%;
+}
+.notification:hover {
+  cursor: pointer;
+}
+
+.notification--unread {
+  background-color: hsl(210deg, 60%, 98%);
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 85%;
+}
+@media screen and (max-width: 576px) {
+  .notification--unread {
+    width: 85%;
+  }
+}
+
+.notification__img img {
+  width: 50px;
+}
+
+.notification__div {
+  display: flex;
+  margin-left: 1em;
+  width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .notification__div {
+    width: 100%;
+  }
+}
+
+.div__card {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__span:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+
+.card__span--bold {
+  font-weight: bold;
+}
+
+.card__span--gray {
+  color: hsl(219deg, 12%, 42%);
+  font-weight: bold;
+}
+
+.card__span--light-gray {
+  color: hsl(219deg, 12%, 42%);
+  margin: 0 3px;
+}
+.card__span--light-gray:nth-child(5) {
+  margin: 0 1px;
+}
+
+.card__point {
+  color: hsl(1deg, 90%, 64%);
+}
+
+.card__time {
+  color: hsl(219deg, 14%, 63%);
+  width: 100%;
+}
+
+.div__p {
+  margin-top: 0.8em;
+  color: hsl(219deg, 12%, 42%);
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 5px;
+  padding: 1em;
+}
+.div__p:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.card__img img {
+  width: 45px;
+}
+
+.div__card--row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
