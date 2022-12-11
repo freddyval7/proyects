@@ -108,6 +108,10 @@ footer a:hover{
 }
 
 @media screen and (max-width: 798px){
+    .header{
+        padding-right: 1em !important;
+        padding-left: 1em !important;
+    }
     .divMove{
         transition: none;
         transform: none;
