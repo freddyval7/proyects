@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <span id="advice" class="card__span">Advice</span>
+      <p id="text" class="card__p">Click on the dice below to generate an advice</p>
+      <img class="card__divider card__divider-desktop" src="./images/pattern-divider-mobile.svg">
+      <img class="card__divider card__divider-mobile" src="./images/pattern-divider-desktop.svg">
+      <div class="card__div">
+        <img id="dice" class="card__dice" src="./images/icon-dice.svg">
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/freddyval7" target="_blank">Freddy Tomada</a>.
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script defer src="./js/functions.js"></script>
+</body>
+</html>
