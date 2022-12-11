@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <div class="card__div1">
+        <div class="card__logo"><img src="./images/card-logo.svg"></div>
+        <span id="numberCard" class="card__span">0000 0000 0000 0000</span>
+        <div class="card__div">
+          <span id="nameCard" class="div__span"></span>
+          <div class="div">
+            <span id="dateMonthCard" class="div__span">00</span>
+            <span class="div__span">/</span>
+            <span id="dateYearCard" class="div__span">00</span>
+          </div>
+        </div>
+      </div>
+      <div class="card__div2">
+        <p id="cvcCard" class="p__div2">000</p>
+      </div>
+    </div>
+    <form class="form" id="form">
+      <!-- Name Group -->
+      <div class="form__group" id="groupName">
+        <label class="form__label" for="name">Cardholder Name</label>
+        <input class="form__input" type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+        <p class="form__error">Wrong format, letters only</p>
+        <p class="form__error2">Can´t be blank</p>
+      </div>
+  
+      <!-- Number Group -->
+      <div class="form__group" id="groupNumber">
+        <label class="form__label" for="number">Card Number</label>
+        <input class="form__input" type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000">
+        <p class="form__error">Wrong format, numbers and 16 characters only</p>
+        <p class="form__error2">Can´t be blank</p>
+        </div>
+      
+      <!-- Data Group -->
+      <div class="form__div">
+        <div class="form__group" id="groupData">
+          <label class="form__label" for="month">Exp. Date (MM/YY)</label>
+          <div>
+            <input class="form__input form__input-date" type="text" name="month" id="month" placeholder="MM">
+            <input class="form__input form__input-date" type="text" name="year" id="year" placeholder="YY">
+          </div>
+          <p class="form__error">Can´t be blank and numbers only</p>
+          <p class="form__error2">Can´t be blank</p>
+        </div>
+    
+        <div class="form__group" id="groupCvc">
+          <label class="form__label" for="cvc">CVC</label>
+          <input class="form__input form__input-cvc" type="text" name="cvc" id="cvc" placeholder="e.g. 123">
+          <p class="form__error">Can´t be blank and numbers only</p>
+          <p class="form__error2">Can´t be blank</p>
+        </div>
+      </div>
+  
+      <div class="form__group form__group-btn-confirm">
+        <button type="submit" class="form__btn">Confirm</button>
+      </div>
+    </form>
+    <div id="success" class="success">
+      <div class="success__div">
+        <img src="./images/icon-complete.svg">
+      </div>
+      <h2 class="success__h2">THANK YOU!</h2>
+      <span class="success__span">We've added your card details</span>
+      <button id="success__btn" class="success__btn">Continue</button>
+    </div>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script defer src="./js/validations.js"></script>
+</body>
+</html>
