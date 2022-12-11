@@ -57,7 +57,7 @@ body {
     width: 100%;
   }
 }
-.card__span {
+.card__h1 {
   text-transform: uppercase;
   color: hsl(150deg, 100%, 66%);
   font-size: 12px;
